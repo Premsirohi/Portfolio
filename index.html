@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8">
     <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>My Portfolio</h1>
     </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <main>
-        <section id="home">
-            <h1>Welcome to my Portfolio</h1>
-            <p>This is a place where you can see my work and learn more about me.</p>
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="me.jpg" alt="A picture of me">
-            <p>I am a web developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, and various frameworks and libraries.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="project1.html">Project 1</a></li>
-                <li><a href="project2.html">Project 2</a></li>
-                <li><a href="project3.html">Project 3</a></li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" required></textarea><br>
-                <input type="submit" value="Send">
-            </form>
-        </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Insert your bio here.</p>
+      </section>
+      <section id="work">
+        <h2>My Work</h2>
+        <ul>
+          <li>
+            <a href="project1.html">
+              <img src="project1.jpg" alt="Project 1">
+              <h3>Project 1</h3>
+            </a>
+          </li>
+          <li>
+            <a href="project2.html">
+              <img src="project2.jpg" alt="Project 2">
+              <h3>Project 2</h3>
+            </a>
+          </li>
+          <li>
+            <a href="project3.html">
+              <img src="project3.jpg" alt="Project 3">
+              <h3>Project 3</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Insert your contact information here.</p>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+  </body>
+    </html>
