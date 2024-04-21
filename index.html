@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
     <header>
-      <h1>My Portfolio</h1>
+        <nav>
+            <div class="left">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="right">
+                <img src="logo.png" alt="Logo">
+            </div>
+        </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section id="about">
+    <section class="hero">
+        <div class="left">
+            <img src="profile.png" alt="Profile">
+        </div>
+        <div class="right">
+            <h6>Welcome to my portfolio website!</h6>
+            <h1>I'm <span>Your Name</span></h1>
+            <p>A web developer with a passion for creating beautiful and functional websites.</p>
+        </div>
+    </section>
+    <section class="about">
         <h2>About Me</h2>
-        <p>Insert your bio here.</p>
-      </section>
-      <section id="work">
-        <h2>My Work</h2>
-        <ul>
-          <li>
-            <a href="project1.html">
-              <img src="project1.jpg" alt="Project 1">
-              <h3>Project 1</h3>
-            </a>
-          </li>
-          <li>
-            <a href="project2.html">
-              <img src="project2.jpg" alt="Project 2">
-              <h3>Project 2</h3>
-            </a>
-          </li>
-          <li>
-            <a href="project3.html">
-              <img src="project3.jpg" alt="Project 3">
-              <h3>Project 3</h3>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section id="contact">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula vitae nisi tincidunt dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+    <section class="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="servicesIcon"><i class="fas fa-code"></i></div>
+                <div class="servicesText">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula vitae nisi tincidunt dapibus.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="servicesIcon"><i class="fas fa-paint-brush"></i></div>
+                <div class="servicesText">
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula vitae nisi tincidunt dapibus.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="servicesIcon"><i class="fas fa-mobile-alt"></i></div>
+                <div class="servicesText">
+                    <h3>Mobile App Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula vitae nisi tincidunt dapibus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
         <h2>Contact Me</h2>
-        <p>Insert your contact information here.</p>
-      </section>
-    </main>
-  </body>
-    </html>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Project Details"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
